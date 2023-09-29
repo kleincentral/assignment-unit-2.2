@@ -26,10 +26,9 @@ if (number >= 2) {
 
 
 // 1. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// First it creates a name variable containing 'Dane'
+// then it creates and if statement, if name == 'Mary' it will give a personal console log message for her.
+// Since the name variable is not 'Mary' and instead 'Dane' it will give a general console log message of 'How do you do?'
 
 //CODE
 /*
@@ -45,10 +44,11 @@ if (name === 'Mary') {
 */
 
 // 2. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// First there is a blank variable created called secret, and a code variable labed as 123
+// then in the if statement if code is === 123 meaning equal in type and value, which it is.
+// in the if statement secret is set to 'super' and code is multiplied by 2 to equal 246.
+// The last statement goes off and since code is not greater than 250 nothing happens.
+// the console log pastes what secret is set to, 'super'
 
 //CODE
 /*
@@ -70,10 +70,11 @@ console.log(secret)
 */
 
 // 3. WRITE YOUR DESCRIPTION HERE
-// 
-// 
-// 
-//
+// three variables are declared, isStudent which is true, age which is 34, and zip which is 55407
+// then a large if statement is read, the first statement is not true since zip is less than 80000
+// the second one is false since student is true and age is greater than 30
+// the third is true so the console log will say 'Welcome to Prime!'
+// the last else parameter is never reached since the code quits out before then.
 
 //CODE
 /*
@@ -134,9 +135,14 @@ let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+// FIX - colorOne is not blue, try swapping around colorOne and colorTwo since they are opposite
+
 if (mix === true) {
   colorOne = 'purple';
 }
+// FIX - colorOne is only set to purple, another statement is needed to set colorTwo as purple 
+// such as colorTwo = 'purple';
+
 */
 
 //5. We start with two variables -- temp is set to 40 and time is set to 4.
@@ -150,6 +156,10 @@ const time = 4;
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
+// FIX - This simply asks an or statement instead of and like we want. So if temp is less than 39 but time is
+// greater than 4 the statement still goes through when it shouldn't. Instead of using || inside the if's
+// parameters use &&, example: if (temp > 39 && time >= 4)
+
 */
 
 //6. We start with two variables -- age is set to 21 and minAge is set to 21.
@@ -165,5 +175,10 @@ if(minAge <= age) {
 } else {
   console.log('enter');
 }
+// FIX - Right now the code is giving the no entry console log when the parameters are met rather than the console
+// log of enter like it should. There are two possible fixes, one of which is trading the console.log of the if and
+// else statements, the other is changing the if statement, example: if(minAge > age)
+// Although this is not the best way, since this allows for a console.log of enter if age is not a variable at all.
+
 */
 
